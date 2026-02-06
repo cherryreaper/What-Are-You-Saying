@@ -1,0 +1,14 @@
+[gd_resource type="Theme" format=3 uid="uid://bpve5arrghm3u"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i2mws"]
+bg_color = Color(0.05116404, 0.1869227, 0.2873215, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.021959763, 0.11524496, 0.18394732, 1)
+shadow_size = 4
+shadow_offset = Vector2(2, 2)
+
+[resource]
+LineEdit/styles/normal = SubResource("StyleBoxFlat_i2mws")

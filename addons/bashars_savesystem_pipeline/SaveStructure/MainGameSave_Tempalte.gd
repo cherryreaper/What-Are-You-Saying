@@ -8,3 +8,8 @@ class_name Game_Save
 
 
 @export var player_symbols : Array[Symbol_Save] = [] ## The symbols the player has encountered + their guess for them (The Index of the array = the symbol's ID!) 
+
+
+func _init() -> void:
+	if(player_symbols == []):
+		player_symbols.resize(99)

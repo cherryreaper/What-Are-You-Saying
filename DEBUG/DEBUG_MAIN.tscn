@@ -1,12 +1,30 @@
 [gd_scene format=3 uid="uid://bsycbtgeh312k"]
 
 [ext_resource type="Script" uid="uid://c47jbe88cwnbh" path="res://DEBUG/debug_main.gd" id="1_0ukl2"]
+[ext_resource type="Theme" uid="uid://bpve5arrghm3u" path="res://Art/UI_Themes/Main_UI_Theme.tres" id="2_rlasa"]
 
 [node name="DebugMain" type="Node2D" unique_id=507934101]
 script = ExtResource("1_0ukl2")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=828993586]
-offset_left = 104.0
-offset_top = 71.0
-offset_right = 144.0
-offset_bottom = 111.0
+offset_left = 183.0
+offset_top = 348.0
+offset_right = 476.0
+offset_bottom = 388.0
+
+[node name="LineEdit" type="LineEdit" parent="." unique_id=1914910769]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 64.0
+offset_top = 9.0
+offset_right = 177.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_rlasa")
+alignment = 1
+
+[connection signal="text_changed" from="LineEdit" to="." method="_on_line_edit_text_changed"]

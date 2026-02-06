@@ -180,12 +180,6 @@ func write_settings():
 
 
 
-## Game-Specifc Save Instructions 
-## Everything below here is game-specifc implementation! 
-
-
-
-
 ## Main Game Save Read/Write 
 
 #Loads a main game save file 
@@ -246,3 +240,9 @@ func write_main_game_save():
 			print(str("Saving progress for Main Save in slot: ", current_save_slot))
 		else:
 			pass
+
+
+
+
+## Game-Specifc Save Instructions 
+## Everything below here is game-specifc implementation! 

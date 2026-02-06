@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://t8nvgkx76sr1" path="res://Scenes/Abstracts/abstract_symbol.gd" id="1_n36nt"]
 [ext_resource type="Texture2D" uid="uid://37ixbwva0o88" path="res://Art/PLACEHOLDERS/Test_Smile.png" id="1_ycdrp"]
+[ext_resource type="PackedScene" uid="uid://4cqw32hdsmyl" path="res://Scenes/UI/Hover_Symbol_Info.tscn" id="3_lhkv6"]
 
 [node name="AbstractSymbol" type="Control" unique_id=325573044]
 custom_minimum_size = Vector2(64, 64)
@@ -15,7 +16,6 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("1_n36nt")
-metadata/_edit_lock_ = true
 
 [node name="SymbolDisplay" type="TextureRect" parent="." unique_id=316244258]
 layout_mode = 1
@@ -24,5 +24,12 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("1_ycdrp")
 metadata/_edit_lock_ = true
+
+[node name="HoverSymbolInfo" parent="." unique_id=649554146 instance=ExtResource("3_lhkv6")]
+position = Vector2(31, 0)
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
