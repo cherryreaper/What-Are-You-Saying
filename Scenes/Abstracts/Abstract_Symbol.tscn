@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://c4h3cim0i1ste"]
+
+[ext_resource type="Script" uid="uid://t8nvgkx76sr1" path="res://Scenes/Abstracts/abstract_symbol.gd" id="1_n36nt"]
+[ext_resource type="Texture2D" uid="uid://37ixbwva0o88" path="res://Art/PLACEHOLDERS/Test_Smile.png" id="1_ycdrp"]
+
+[node name="AbstractSymbol" type="Control" unique_id=325573044]
+layout_mode = 3
+anchor_right = 0.056
+anchor_bottom = 0.09
+offset_right = -0.51200104
+offset_bottom = 5.6799965
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_n36nt")
+metadata/_edit_lock_ = true
+
+[node name="SymbolDisplay" type="TextureRect" parent="." unique_id=316244258]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ycdrp")
+metadata/_edit_lock_ = true
