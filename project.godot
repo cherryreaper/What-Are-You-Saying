@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 GameManager="*uid://bps70sglv80qu"
 SAVE="*uid://b6knwae5tchub"
+SymbolManager="*uid://cqsoxp3i10fko"
 
 [display]
 
@@ -33,6 +34,7 @@ enabled=PackedStringArray("res://addons/bashars_savesystem_pipeline/plugin.cfg")
 folder_colors={
 "res://Art/": "red",
 "res://DEBUG/": "green",
+"res://Data/": "blue",
 "res://Scenes/": "yellow",
 "res://Singletons/": "purple",
 "res://addons/": "purple"

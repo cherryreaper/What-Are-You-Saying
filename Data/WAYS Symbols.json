@@ -1,0 +1,24 @@
+{
+  "Symbol Data": {
+	"Smile": {
+	  "ID": 0,
+	  "SPRITE_PATH": "res://Art/PLACEHOLDERS/Test_Smile.png",
+	  "SYMBOL_TYPE": null
+	},
+	"Smudge": {
+	  "ID": 1,
+	  "SPRITE_PATH": "res://Art/PLACEHOLDERS/Test_Smudge2.png",
+	  "SYMBOL_TYPE": null
+	},
+	"Squiggle": {
+	  "ID": 2,
+	  "SPRITE_PATH": "res://Art/PLACEHOLDERS/Test_Smudge.png",
+	  "SYMBOL_TYPE": null
+	},
+	"": {
+	  "ID": 40,
+	  "SPRITE_PATH": null,
+	  "SYMBOL_TYPE": null
+	}
+  }
+}

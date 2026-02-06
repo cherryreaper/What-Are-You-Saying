@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://37ixbwva0o88" path="res://Art/PLACEHOLDERS/Test_Smile.png" id="1_ycdrp"]
 
 [node name="AbstractSymbol" type="Control" unique_id=325573044]
+custom_minimum_size = Vector2(64, 64)
 layout_mode = 3
 anchor_right = 0.056
 anchor_bottom = 0.09
@@ -11,6 +12,8 @@ offset_right = -0.51200104
 offset_bottom = 5.6799965
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 script = ExtResource("1_n36nt")
 metadata/_edit_lock_ = true
 
