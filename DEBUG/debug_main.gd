@@ -16,6 +16,9 @@ func _ready() -> void:
 	
 	
 	
+	SymbolManager.get_puzzle_phrase_from_id("emma_p1")
+	
+	
 	
 	#for i in range(1, 10):
 		#$HBoxContainer.add_child(SymbolManager.create_symbol_object(test_word))

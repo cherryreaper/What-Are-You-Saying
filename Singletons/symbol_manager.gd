@@ -26,8 +26,8 @@ func create_symbol_object(word_id : String) -> Abstract_Symbol:
 	
 	var symbol : Abstract_Symbol = symbol_refrence.instantiate()
 	## Populate data from Dict
-	var data : Dictionary = _symbol_data.get(word_id)
-	if(data):
+	var data = _symbol_data.get(word_id.to_pascal_case())
+	if(data is Dictionary):
 		symbol.id = data.get("ID")
 		symbol.image_path = data.get("SPRITE_PATH")
 		symbol.correct_translation = word_id
@@ -40,13 +40,40 @@ func create_symbol_object(word_id : String) -> Abstract_Symbol:
 
 
 
-enum Phrase_Array_Index_Type {MODIFIER, PRIMARY, DESCRIPTIVE}
+enum Parts_Of_Speach {MODIFIER, PRIMARY, DESCRIPTIVE} ## In order! (Very important for readable code!) 
 
 ## Returns a data object that represents how to display a phrase from a given puzzle ID
 func get_puzzle_phrase_from_id(id : String) -> Array[Array]:
 	var phrase_arr : Array[Array] = []
 	var part_index : int = 0
 	
+	
+	while  part_index != -1:
+		var row = _puzzle_data.get(str(id, "_", part_index))
+		if(row): ## If data was found for this ID + index
+			
+			var part_of_speach : int = 0
+			var row_array : Array[Abstract_Symbol] = []
+			for type in row:
+				## Create symbol objects
+				var symbol_as_string = row.get(type)
+				var symbol
+				if(symbol_as_string):
+					symbol = create_symbol_object(row.get(type))
+				else:
+					symbol = null ## Use null to create gaps
+				## Append it to the array!
+				row_array.append(symbol)
+				## Move counter!
+				part_of_speach += 1
+			
+			## When finished append the smaller array!
+			phrase_arr.append(row_array)
+			
+			part_index += 1
+		else:
+			## Break if we can not find any more lines! 
+			part_index = -1
 	
 	
 	
@@ -60,7 +87,7 @@ func get_puzzle_phrase_from_id(id : String) -> Array[Array]:
 ## Spawns in symbols from a phrase inside a calling control object 
 func spawn_symbols_in_control_from_phrase(phrase : Array[Array], control_object : Control):
 	
-	var type_index : Phrase_Array_Index_Type = 0
+	var part_of_speach : Parts_Of_Speach = 0
 	
 	for colum in phrase:
 		for row in colum:

@@ -65,6 +65,11 @@
 	  "SYMBOL_TYPE": "specific",
 	  "SPRITE_PATH": "res://Art/PLACEHOLDERS/Negative_Placeholder.png"
 	},
+	"Emma": {
+	  "ID": 13,
+	  "SYMBOL_TYPE": "specific",
+	  "SPRITE_PATH": "res://Art/PLACEHOLDERS/Test_Smile.png"
+	},
 	"": {
 	  "ID": 40,
 	  "SYMBOL_TYPE": null,
