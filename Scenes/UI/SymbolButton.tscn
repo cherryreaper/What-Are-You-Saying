@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dbvl0d5mb2ysw"]
+
+[ext_resource type="PackedScene" uid="uid://c4h3cim0i1ste" path="res://Scenes/Abstracts/Abstract_Symbol.tscn" id="1_ghmaj"]
+[ext_resource type="Script" uid="uid://bumuug5r3i757" path="res://Scenes/UI/symbol_button.gd" id="1_sqof5"]
+
+[node name="SymbolButton" type="Button" unique_id=1533295239]
+custom_minimum_size = Vector2(64, 64)
+anchors_preset = -1
+anchor_right = 0.061000004
+anchor_bottom = 0.105000004
+offset_right = -0.27200317
+offset_bottom = -0.040000916
+script = ExtResource("1_sqof5")
+
+[node name="AbstractSymbol" parent="." unique_id=325573044 instance=ExtResource("1_ghmaj")]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.0
+offset_bottom = 0.0
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

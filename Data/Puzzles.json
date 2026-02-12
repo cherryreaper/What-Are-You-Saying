@@ -1,0 +1,42 @@
+{
+  "emma_p1_0": {
+	"Modifier": "personal",
+	"Primary": "name",
+	"Descriptive": null
+  },
+  "emma_p1_1": {
+	"Modifier": null,
+	"Primary": "Emma",
+	"Descriptive": null
+  },
+  "leo_p2_0": {
+	"Modifier": null,
+	"Primary": "question",
+	"Descriptive": "method"
+  },
+  "leo_p2_1": {
+	"Modifier": "personal",
+	"Primary": "identifier",
+	"Descriptive": null
+  },
+  "leo_p2_2": {
+	"Modifier": "active",
+	"Primary": "active",
+	"Descriptive": null
+  },
+  "leo_p2_3": {
+	"Modifier": "impersonal",
+	"Primary": "group",
+	"Descriptive": "near"
+  },
+  "leo_p2_4": {
+	"Modifier": "active",
+	"Primary": "feeling",
+	"Descriptive": "positive"
+  },
+  "leo_p2_5": {
+	"Modifier": "personal",
+	"Primary": "identifier",
+	"Descriptive": null
+  }
+}
