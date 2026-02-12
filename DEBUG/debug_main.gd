@@ -16,7 +16,8 @@ func _ready() -> void:
 	
 	
 	
-	SymbolManager.get_puzzle_phrase_from_id("emma_p1")
+	var phrase = SymbolManager.get_puzzle_phrase_from_id("leo_p2")
+	SymbolManager.spawn_symbols_in_control_from_phrase(phrase, $GridContainer)
 	
 	
 	

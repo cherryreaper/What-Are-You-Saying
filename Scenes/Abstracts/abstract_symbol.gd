@@ -11,8 +11,9 @@ var correct_translation : String = "CHANGE_THIS"
 func _ready() -> void:
 	$HoverSymbolInfo.visible = false
 	
-	## Load the correct image
-	$SymbolDisplay.texture = load(image_path)
+	## Load the correct image 
+	if(FileAccess.file_exists(image_path)):
+		$SymbolDisplay.texture = load(image_path)
 
 
 

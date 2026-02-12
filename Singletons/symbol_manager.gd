@@ -1,7 +1,9 @@
 extends Node
 
 
-## Class to handle reading Symbol data 
+## Class to handle reading Symbol data & Language & Puzzle Spawning
+
+enum Parts_Of_Speach {MODIFIER, PRIMARY, DESCRIPTIVE} ## In order! (Very important for readable code!) 
 
 const SYMBOL_JSON_PATH = "res://Data/WAYS Symbols.json" ## Path to the JSON file for Symbol data
 const PUZZLE_JSON_PATH = "res://Data/Puzzles.json" ##Path to the JSON file for puzzle data
@@ -15,7 +17,7 @@ func _ready() -> void:
 	## Populate data from json
 	if(not _symbol_data):
 		var json_as_text = FileAccess.get_file_as_string(SYMBOL_JSON_PATH)
-		_symbol_data = JSON.parse_string(json_as_text).values()[0]
+		_symbol_data = JSON.parse_string(json_as_text)
 	
 	if(not _puzzle_data):
 		var json_as_text = FileAccess.get_file_as_string(PUZZLE_JSON_PATH)
@@ -39,14 +41,11 @@ func create_symbol_object(word_id : String) -> Abstract_Symbol:
 
 
 
-
-enum Parts_Of_Speach {MODIFIER, PRIMARY, DESCRIPTIVE} ## In order! (Very important for readable code!) 
-
 ## Returns a data object that represents how to display a phrase from a given puzzle ID
 func get_puzzle_phrase_from_id(id : String) -> Array[Array]:
+	
 	var phrase_arr : Array[Array] = []
 	var part_index : int = 0
-	
 	
 	while  part_index != -1:
 		var row = _puzzle_data.get(str(id, "_", part_index))
@@ -61,7 +60,8 @@ func get_puzzle_phrase_from_id(id : String) -> Array[Array]:
 				if(symbol_as_string):
 					symbol = create_symbol_object(row.get(type))
 				else:
-					symbol = null ## Use null to create gaps
+					## Make a blank space symbol
+					symbol = create_symbol_object("Blank_Space")
 				## Append it to the array!
 				row_array.append(symbol)
 				## Move counter!
@@ -75,13 +75,7 @@ func get_puzzle_phrase_from_id(id : String) -> Array[Array]:
 			## Break if we can not find any more lines! 
 			part_index = -1
 	
-	
-	
-	
-	
 	return phrase_arr
-	
-	pass
 
 
 ## Spawns in symbols from a phrase inside a calling control object 
@@ -89,9 +83,6 @@ func spawn_symbols_in_control_from_phrase(phrase : Array[Array], control_object 
 	
 	var part_of_speach : Parts_Of_Speach = 0
 	
-	for colum in phrase:
-		for row in colum:
-			pass
-		pass
-	
-	pass
+	for row in phrase:
+		for symbol in row:
+			control_object.add_child(symbol)

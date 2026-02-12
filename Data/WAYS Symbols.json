@@ -1,79 +1,82 @@
 {
-  "Symbol Data": {
-	"Name": {
-	  "ID": 0,
-	  "SYMBOL_TYPE": "primary",
-	  "SPRITE_PATH": "res://Art/PLACEHOLDERS/Name_Placeholder.png"
-	},
-	"Work": {
-	  "ID": 1,
-	  "SYMBOL_TYPE": "primary",
-	  "SPRITE_PATH": "res://Art/PLACEHOLDERS/Work_Placeholder.png"
-	},
-	"Identifier": {
-	  "ID": 2,
-	  "SYMBOL_TYPE": "primary",
-	  "SPRITE_PATH": "res://Art/PLACEHOLDERS/Identifier_Placeholder.png"
-	},
-	"Active": {
-	  "ID": 3,
-	  "SYMBOL_TYPE": "multiple",
-	  "SPRITE_PATH": "res://Art/PLACEHOLDERS/Active_Placeholder.png"
-	},
-	"Group": {
-	  "ID": 4,
-	  "SYMBOL_TYPE": "primary",
-	  "SPRITE_PATH": "res://Art/PLACEHOLDERS/Group_Placeholder.png"
-	},
-	"Feeling": {
-	  "ID": 5,
-	  "SYMBOL_TYPE": "primary",
-	  "SPRITE_PATH": "res://Art/PLACEHOLDERS/Feeling_Placeholder.png"
-	},
-	"Personal": {
-	  "ID": 6,
-	  "SYMBOL_TYPE": "modifier",
-	  "SPRITE_PATH": "res://Art/PLACEHOLDERS/Personal_Placeholder.png"
-	},
-	"Impersonal": {
-	  "ID": 7,
-	  "SYMBOL_TYPE": "modifier",
-	  "SPRITE_PATH": "res://Art/PLACEHOLDERS/Impersonal_Placeholder.png"
-	},
-	"Method": {
-	  "ID": 8,
-	  "SYMBOL_TYPE": "specific",
-	  "SPRITE_PATH": "res://Art/PLACEHOLDERS/Method_Placeholder.png"
-	},
-	"Near": {
-	  "ID": 9,
-	  "SYMBOL_TYPE": "specific",
-	  "SPRITE_PATH": "res://Art/PLACEHOLDERS/Near_Placeholder.png"
-	},
-	"Far": {
-	  "ID": 10,
-	  "SYMBOL_TYPE": "specific",
-	  "SPRITE_PATH": "res://Art/PLACEHOLDERS/Far_Placeholder.png"
-	},
-	"Positive": {
-	  "ID": 11,
-	  "SYMBOL_TYPE": "specific",
-	  "SPRITE_PATH": "res://Art/PLACEHOLDERS/Positive_Placeholder.png"
-	},
-	"Negative": {
-	  "ID": 12,
-	  "SYMBOL_TYPE": "specific",
-	  "SPRITE_PATH": "res://Art/PLACEHOLDERS/Negative_Placeholder.png"
-	},
-	"Emma": {
-	  "ID": 13,
-	  "SYMBOL_TYPE": "specific",
-	  "SPRITE_PATH": "res://Art/PLACEHOLDERS/Test_Smile.png"
-	},
-	"": {
-	  "ID": 40,
-	  "SYMBOL_TYPE": null,
-	  "SPRITE_PATH": null
-	}
+  "BlankSpace": {
+	"ID": 0,
+	"SYMBOL_TYPE": null,
+	"SPRITE_PATH": "res://Art/Symbols/BLANK_SPACE_SYMBOL.png"
+  },
+  "Name": {
+	"ID": 1,
+	"SYMBOL_TYPE": "primary",
+	"SPRITE_PATH": "res://Art/PLACEHOLDERS/Name_Placeholder.png"
+  },
+  "Work": {
+	"ID": 2,
+	"SYMBOL_TYPE": "primary",
+	"SPRITE_PATH": "res://Art/PLACEHOLDERS/Work_Placeholder.png"
+  },
+  "Identifier": {
+	"ID": 3,
+	"SYMBOL_TYPE": "primary",
+	"SPRITE_PATH": "res://Art/PLACEHOLDERS/Identifier_Placeholder.png"
+  },
+  "Active": {
+	"ID": 4,
+	"SYMBOL_TYPE": "multiple",
+	"SPRITE_PATH": "res://Art/PLACEHOLDERS/Active_Placeholder.png"
+  },
+  "Group": {
+	"ID": 5,
+	"SYMBOL_TYPE": "primary",
+	"SPRITE_PATH": "res://Art/PLACEHOLDERS/Group_Placeholder.png"
+  },
+  "Feeling": {
+	"ID": 6,
+	"SYMBOL_TYPE": "primary",
+	"SPRITE_PATH": "res://Art/PLACEHOLDERS/Feeling_Placeholder.png"
+  },
+  "Personal": {
+	"ID": 7,
+	"SYMBOL_TYPE": "modifier",
+	"SPRITE_PATH": "res://Art/PLACEHOLDERS/Personal_Placeholder.png"
+  },
+  "Impersonal": {
+	"ID": 8,
+	"SYMBOL_TYPE": "modifier",
+	"SPRITE_PATH": "res://Art/PLACEHOLDERS/Impersonal_Placeholder.png"
+  },
+  "Method": {
+	"ID": 9,
+	"SYMBOL_TYPE": "specific",
+	"SPRITE_PATH": "res://Art/PLACEHOLDERS/Method_Placeholder.png"
+  },
+  "Near": {
+	"ID": 10,
+	"SYMBOL_TYPE": "specific",
+	"SPRITE_PATH": "res://Art/PLACEHOLDERS/Near_Placeholder.png"
+  },
+  "Far": {
+	"ID": 11,
+	"SYMBOL_TYPE": "specific",
+	"SPRITE_PATH": "res://Art/PLACEHOLDERS/Far_Placeholder.png"
+  },
+  "Positive": {
+	"ID": 12,
+	"SYMBOL_TYPE": "specific",
+	"SPRITE_PATH": "res://Art/PLACEHOLDERS/Positive_Placeholder.png"
+  },
+  "Negative": {
+	"ID": 14,
+	"SYMBOL_TYPE": "specific",
+	"SPRITE_PATH": "res://Art/PLACEHOLDERS/Negative_Placeholder.png"
+  },
+  "Emma": {
+	"ID": 15,
+	"SYMBOL_TYPE": "specific",
+	"SPRITE_PATH": "res://Art/PLACEHOLDERS/Test_Smile.png"
+  },
+  "": {
+	"ID": 40,
+	"SYMBOL_TYPE": null,
+	"SPRITE_PATH": null
   }
 }
